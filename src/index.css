@@ -1,0 +1,264 @@
+* {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    color: black;
+
+}
+
+body {
+    height: 100vh;
+    background-color: #09c4a4;
+    /* background-color: #eb62f0; */
+    width: 100%;
+}
+
+button {
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.1s ease-in-out;
+}
+
+
+img {
+    height: 110px;
+}
+
+.navbar {
+    background: #01FFAE;
+    background: linear-gradient(0deg, #09c4a4, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 0 10px rgb(0, 0, 0);
+    /* position: fixed; */
+    height: 4.5rem;
+}
+
+.app-name {
+    font-weight: 600;
+    color: #292929;
+    font-size: 22px;
+}
+
+.todo-app-container {
+    padding: 2rem;
+    color: #fff;
+    gap: 1.5rem;
+    display: flex;
+    margin: 4rem auto;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(121, 233, 214);
+    border-radius: 15px;
+    width: 50%;
+    height: fit-content;
+    box-shadow: 0px 0px 12px rgb(0, 0, 0);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.h1 {
+    color: #fff;
+}
+
+#task-title {
+    border-radius: 10px;
+    border: none;
+    height: 2rem;
+    width: fit-content;
+    padding: 0 0.7rem;
+    box-shadow: 0 0 8px rgb(2, 46, 66);
+}
+
+#task-title:focus {
+    border: none;
+    outline: none;
+}
+
+.task-add {
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    height: 2rem;
+    width: fit-content;
+    background-color: rgb(0, 4, 214);
+    padding: 0 0.7rem;
+    margin-left: 0.7rem;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+
+}
+
+.task-title-name {
+    font-size: 17px;
+}
+
+hr {
+    width: 85%;
+    height: 1px;
+    background-color: #696969;
+    border: none;
+}
+
+.display {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.display-completed,
+.display-todos {
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 2rem;
+    width: fit-content;
+    padding: 0 0.7rem;
+}
+
+
+.edit-todo-list-item,
+.done-todo-list-item,
+.remove-todo-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(34, 31, 31);
+    border-radius: 7px;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 18px;
+    margin: 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.done-todo-list-item {
+    font-size: 23px;
+}
+
+.done-todo-list-item:hover,
+.edit-todo-list-item:hover,
+.remove-todo-list-item:hover {
+    cursor: pointer;
+    border-radius: 7px;
+    border: 1px solid #fff;
+    background-color: rgb(49, 15, 204);
+    color: #fff;
+}
+
+.done-todo-list-item:hover i,
+.edit-todo-list-item:hover i,
+.remove-todo-list-item:hover i {
+    color: #fff;
+}
+
+.todo-list-item {
+    display: flex;
+    align-items: center;
+    margin: 0.55rem 0;
+}
+
+.display-completed,
+.display-todos {
+    transition: all 0.2s ease-in-out;
+}
+
+.display-completed:hover,
+.display-todos:hover {
+    background-color: rgb(2, 0, 133);
+    border: none;
+    color: #fff;
+}
+
+.display-completed:active,
+.display-todos:active {
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+
+}
+
+.list-item-display {
+    font-weight: 500;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls,
+.controls2 {
+    display: flex;
+}
+
+.todo-list-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-item-display {
+    display: flex;
+    inline-size: 500px;
+    white-space: normal;
+    padding-right: 1rem;
+    overflow: hidden;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    /* width: 70%; */
+    width: 15rem;
+}
+
+
+.dipslay-todos-or-completed {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    text-wrap: wrap;
+    word-wrap: break-word;
+}
+
+
+@media (max-width: 768px) {
+    .title {
+        gap: 0.55rem;
+        flex-direction: column;
+    }
+
+    .input-task {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list-item-display {
+        width: 9rem;
+    }
+
+    .todo-app-container {
+        width: 70%;
+    }
+    .navbar{
+        height: 4rem;
+    }
+}
