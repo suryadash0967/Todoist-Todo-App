@@ -220,10 +220,8 @@ hr {
     white-space: normal;
     padding-right: 1rem;
     overflow: hidden;
-    /* text-wrap: wrap;
-    word-wrap: break-word; */
-    overflow-x: scroll;
-
+    text-wrap: wrap;
+    word-wrap: break-word;
     /* width: 70%; */
     width: 15rem;
 }
@@ -234,8 +232,9 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* text-wrap: wrap;
-    word-wrap: break-word; */
+    overflow: hidden;
+    text-wrap: wrap;
+    word-wrap: break-word;
 }
 
 
