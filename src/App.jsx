@@ -48,6 +48,7 @@ function App() {
       setTodos(updatedArr);
       localStorage.setItem('todolist1', JSON.stringify(updatedArr))
       setNewTitle("");
+      setShowCompleted(true)
     }
   }
 
