@@ -140,6 +140,7 @@ hr {
     height: 1.5rem;
     font-size: 18px;
     margin: 0.5rem;
+    padding: 0.1rem;
     transition: all 0.2s ease-in-out;
 }
 
