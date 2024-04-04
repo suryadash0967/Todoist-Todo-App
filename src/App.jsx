@@ -67,7 +67,7 @@ function App() {
     <>
         <div className="navbar">
           <img src={blog} alt="" />
-          <div className="app-name">The Todoist</div>
+          <div className="app-name">Todoist</div>
         </div>
 
         
